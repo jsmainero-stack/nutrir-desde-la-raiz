@@ -62,9 +62,9 @@
 
         <!-- AUDIO: dejá "audio-jorgelina.mp3" en esta misma carpeta. Si no existe, el bloque se oculta solo. -->
         <div class="audio" id="audiobox">
-          <div class="ico" id="aico"><svg class="ic ic-fill" style="width:15px;height:15px;margin-left:2px"><use href="#i-play"/></svg></div>
-          <span>Escuchame 90 segundos antes de seguir leyendo</span>
-          <audio id="aud" preload="none" src="audio-jorgelina.mp3"></audio>
+          <button class="ico" id="aico" type="button" aria-label="Reproducir el audio de Jorgelina"><svg class="ic ic-fill" style="margin-left:3px"><use href="#i-play"/></svg></button>
+          <div class="atx"><span class="al">Escuchame 90 segundos antes de seguir leyendo</span><div class="abar"><i id="afill"></i></div><span class="at" id="atime">Te lo grabé yo · 1:30</span></div>
+          <audio id="aud" preload="metadata" src="audio-jorgelina.mp3"></audio>
         </div>
 
         <div class="pills">
@@ -93,6 +93,8 @@
     </div>
     <ul class="check rv">
       <li><span class="dot"></span><span>Sabés perfectamente qué tenés que comer. El problema es que no lo podés sostener.</span></li>
+      <li><span class="dot"></span><span>Te hiciste todos los estudios y te dan bien. Y aun así sentís que algo no está funcionando.</span></li>
+      <li><span class="dot"></span><span>Nunca dejaste de moverte ni de intentarlo. Y seguís en el mismo lugar.</span></li>
       <li><span class="dot"></span><span>Arrancás el lunes con toda la fuerza y para el jueves ya sos otra persona.</span></li>
       <li><span class="dot"></span><span>Comés bien todo el día y a la noche, sola, pasa otra cosa.</span></li>
       <li><span class="dot"></span><span>Bajaste muchas veces. Siempre volviste al mismo lugar, o un poco más arriba.</span></li>
@@ -101,6 +103,18 @@
     </ul>
     <div class="narrow rv" style="text-align:center">
       <p style="font-family:var(--serif);font-size:1.25rem;line-height:1.4;color:var(--verde)">Si te reconocés en tres o más, el problema no es tu voluntad.<br>Y no es tu próxima dieta.</p>
+    </div>
+
+    <div class="frases rv">
+      <div class="eyebrow" style="margin-bottom:1.4rem">Lo que más escucho cuando alguien me escribe por primera vez</div>
+      <p class="fq">"Me hice todos los controles. Los análisis, dentro de todo, en parámetros normales."</p>
+      <p class="fq">"Nunca dejé de hacer actividad física. Pero los planes de dieta estrictos no los puedo sostener en el tiempo."</p>
+      <p class="fq">"Siento como si mi exceso de peso no fuese solo por lo que como o por lo que hago."</p>
+      <p class="fq">"Situaciones externas a mí me empiezan a inflar, inflar, inflar. Y siento mucho peso con eso."</p>
+      <p class="pie">Palabras textuales de una mujer que me escribió, publicadas con su permiso. No es un testimonio de resultados: es el lugar exacto desde donde empieza casi todo el mundo que llega acá. Si algo de esto es tuyo, ya sabés bastante más de lo que creés.</p>
+    </div>
+
+    <div class="narrow rv" style="text-align:center;margin-top:2.2rem">
       <a class="tlink" href="https://wa.me/5493534139222?text=Hola%20Jorgelina%21%20Me%20sent%C3%AD%20muy%20identificada%20con%20las%20situaciones%20que%20describ%C3%ADs%20en%20tu%20p%C3%A1gina.%20Quiero%20contarte%20lo%20que%20me%20pasa%20a%20m%C3%AD." target="_blank" rel="noopener">Quiero contarte lo que me pasa</a>
     </div>
   </div>
@@ -192,6 +206,20 @@
 
     <div class="narrow rv" style="background:var(--hueso);border-radius:12px;padding:1.5rem;border-left:3px solid var(--oliva)">
       <p style="margin:0;font-size:.98rem;line-height:1.65"><strong>Una aclaración honesta:</strong> no te voy a prometer un número en la balanza. Te voy a prometer que vas a entender lo que te pasa. Y desde ahí, las decisiones empiezan a cambiar solas.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIO 1 ===== -->
+<section class="s-verde" style="padding-top:3.6rem;padding-bottom:3.6rem">
+  <div class="wrap">
+    <div class="tst rv" style="margin-top:0">
+      <div class="shot"><img src="img/testimonio-wa.webp" alt="Mensaje de WhatsApp de una paciente" width="560" height="1090" loading="lazy"></div>
+      <div>
+        <div class="real"><svg class="ic"><use href="#i-chat"/></svg>Mensaje real, sin editar</div>
+        <p class="say">"Hasta me permití llorar. Gracias por acompañarme. Y estar."</p>
+        <p class="who">Esto no llegó al final del proceso. Llegó en el medio, el día que apareció lo que estaba debajo de la comida. Nombre reservado, compartido con su permiso.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -300,28 +328,23 @@
   </div>
 </section>
 
-<!--
-  ===== TESTIMONIOS =====
-  Sección lista pero desactivada: todavía no hay testimonios reales.
-  NO publicar con textos inventados. Cuando tengas 3, borrá esta línea y la de cierre.
-
+<!-- ===== TESTIMONIO 2 ===== -->
 <section class="s-hueso">
   <div class="wrap">
     <div class="narrow rv" style="text-align:center">
       <div class="eyebrow">Historias</div>
       <h2>No sos la primera que llega así</h2>
     </div>
-    <div class="cards rv">
-      <div class="card card-luz">
-        <p style="color:var(--tinta);font-size:1rem">"Acá va el testimonio en las palabras de ella. Que hable del antes y el después interno, no de kilos."</p>
-        <h3 style="font-size:.95rem;margin-top:1rem;margin-bottom:0">Nombre, 43 años · Ciudad</h3>
+    <div class="tst rv">
+      <div class="shot"><img src="img/testimonio-ig.webp" alt="Mensaje de una paciente agradeciendo el acompañamiento" width="560" height="1063" loading="lazy"></div>
+      <div>
+        <div class="real"><svg class="ic"><use href="#i-chat"/></svg>Mensaje real, sin editar</div>
+        <p class="say">"Hace un año atrás no era la que soy ahora. Estaba tan mal que pensé que eso no tenía fin."</p>
+        <p class="who">Me lo escribió el día de su cumpleaños, un año después. No hablamos de kilos en todo el mensaje: habló de haber podido salir del lugar en el que estaba. Nombre reservado, compartido con su permiso.</p>
       </div>
     </div>
   </div>
 </section>
-
-  ===== FIN TESTIMONIOS =====
--->
 
 <!-- ===== ¿Y SI LO ABANDONO? ===== -->
 <section class="s-verde">
@@ -366,9 +389,8 @@
       </div>
 
       <div class="lugares">
-        <div class="dots"><i class="on"></i><i class="on"></i><i class="off"></i><i class="off"></i><i class="off"></i><i class="off"></i></div>
-        <b>Quedan 4 lugares con precio de apertura.</b>
-        <em>Trabajo con pocas personas a la vez porque cada proceso es individual y lo llevo yo. Cuando se completen los seis, el programa pasa a $450.000.</em>
+        <b>Trabajo con un cupo de 15 personas por vez.</b>
+        <em>Cada proceso es individual y lo llevo yo, sin equipo detrás. Por eso el cupo es chico y por eso el precio de apertura existe: es para quienes entran ahora. Cuando el cupo se completa, el programa pasa a $450.000.</em>
       </div>
 
       <div class="ctas" style="margin-top:1.8rem">
