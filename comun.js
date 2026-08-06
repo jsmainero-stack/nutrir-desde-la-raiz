@@ -30,6 +30,13 @@
     });
   });
 
+  // si una captura de testimonio todavia no esta subida, se oculta la seccion entera
+  document.querySelectorAll('.tst .shot img').forEach(function(img){
+    function ocultar(){var s=img.closest('section'); if(s){s.style.display='none';}}
+    img.addEventListener('error',ocultar);
+    if(img.complete&&img.naturalWidth===0){ocultar();}
+  });
+
   // audio del hero: reproductor embebido, suena en la misma pagina
   var PLAY='<svg class="ic ic-fill" style="margin-left:3px"><use href="#i-play"/></svg>';
   var PAUSE='<svg class="ic" style="stroke-width:2.2"><use href="#i-pause"/></svg>';
