@@ -104,17 +104,18 @@ section{padding:4.5rem 0}
 .audio .at{display:block;font-size:.74rem;color:var(--gris);margin-top:.34rem;letter-spacing:.04em;font-variant-numeric:tabular-nums}
 
 /* testimonios reales */
-.tst{display:grid;gap:1.8rem;align-items:center;margin-top:2.6rem}
-@media(min-width:760px){.tst{grid-template-columns:.82fr 1.18fr;gap:2.8rem}}
-.tst .shot{border-radius:16px;overflow:hidden;border:1px solid rgba(38,51,42,.14);box-shadow:0 14px 40px rgba(28,28,26,.14);max-width:320px;margin:0 auto;width:100%;background:var(--hueso)}
+.tst{display:grid;gap:1.4rem;align-items:center;margin-top:0}
+@media(min-width:760px){.tst{grid-template-columns:280px 1fr;gap:2.2rem}}
+.tst .shot{border-radius:12px;overflow:hidden;border:1px solid rgba(38,51,42,.14);box-shadow:0 8px 24px rgba(28,28,26,.12);max-width:280px;margin:0 auto;width:100%;background:var(--hueso)}
 .s-verde .tst .shot{border-color:rgba(250,247,242,.18)}
-.tst .real{display:inline-flex;align-items:center;gap:.5rem;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--oliva);font-weight:500;margin-bottom:1rem}
+.tst .real{display:inline-flex;align-items:center;gap:.5rem;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--oliva);font-weight:500;margin-bottom:.8rem}
 .s-verde .tst .real{color:var(--oliva-claro)}
-.tst .real .ic{width:15px;height:15px}
-.tst .say{font-family:var(--serif);font-size:clamp(1.3rem,3.2vw,1.8rem);line-height:1.34;color:var(--verde)}
+.tst .real .ic{width:14px;height:14px}
+.tst .say{font-family:var(--serif);font-size:clamp(1.2rem,2.6vw,1.55rem);line-height:1.32;color:var(--verde)}
 .s-verde .tst .say{color:var(--hueso)}
-.tst .who{font-size:.85rem;color:var(--gris);margin:1.15rem 0 0;line-height:1.55}
+.tst .who{font-size:.82rem;color:var(--gris);margin:.9rem 0 0;line-height:1.5}
 .s-verde .tst .who{color:rgba(250,247,242,.6)}
+@media(max-width:759px){.tst .shot{max-width:230px}}
 
 /* tarjeta de frases textuales */
 .frases{background:var(--hueso);border:1px solid rgba(38,51,42,.13);border-radius:16px;padding:2rem 1.8rem;margin:2.8rem auto 0;max-width:720px}
